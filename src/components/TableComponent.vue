@@ -1,6 +1,7 @@
 <template>
     <div class="table-component">
-    <div>
+    <div style="display:flex;flex-direction:row">
+
         <label>{{tableName}}</label>
         <div v-if="showFilter && filterableColumnExists" class="table-component__filter">
             <input
@@ -15,7 +16,11 @@
                     class="table-component__filter__clear"
             >×</a>
         </div>
+
+        <div>
+            <button @click="flyadd"><i class="fas fa-plus"></i></button>
         </div>
+    </div>
         <div class="table-component__table-wrapper">
             <table :class="fullTableClass">
                 <caption v-if="showCaption" class="table-component__table__caption" role="alert" aria-live="polite">
@@ -235,6 +240,10 @@
         },
 
         methods: {
+            flyadd(){
+                this.$emit('flyadd');
+            },
+
             async pageChange(page) {
                 this.pagination.currentPage = page;
 
