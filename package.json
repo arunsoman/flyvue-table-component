@@ -1,5 +1,5 @@
 {
-  "name": "vue-table-component",
+  "name": "flyvue-table-component",
   "version": "1.9.2",
   "description": "A straightforward Vue component to filter and sort tables",
   "main": "dist/index.js",
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/spatie/vue-table-component.git"
+    "url": "https://github.com/arunsoman/flyvue-table-component.git"
   },
   "keywords": [
-    "spatie"
+    "table"
   ],
-  "author": "Freek Van der Herten",
+  "author": "Arun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spatie/vue-table-component/issues"
+    "url": "https://github.com/arunsoman/flyvue-table-component.git/issues"
   },
-  "homepage": "https://github.com/spatie/vue-table-component",
+  "homepage": "https://github.com/arunsoman/flyvue-table-component.git",
   "peerDependencies": {
     "moment": "^2.18.1",
     "vue": "^2.5.0"
@@ -67,5 +67,10 @@
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
     }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/vue-fontawesome": "^0.1.2"
   }
 }

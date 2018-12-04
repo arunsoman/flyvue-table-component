@@ -1,5 +1,7 @@
 <template>
     <div class="table-component">
+    <div>
+        <label>{{tableName}}</label>
         <div v-if="showFilter && filterableColumnExists" class="table-component__filter">
             <input
                     :class="fullFilterInputClass"
@@ -13,7 +15,7 @@
                     class="table-component__filter__clear"
             >×</a>
         </div>
-
+        </div>
         <div class="table-component__table-wrapper">
             <table :class="fullTableClass">
                 <caption v-if="showCaption" class="table-component__table__caption" role="alert" aria-live="polite">
